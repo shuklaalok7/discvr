@@ -15,5 +15,6 @@ public class AbstractPurchasable extends PersistentObject implements Purchasable
     private String name;
     private double price;
     private Company provider;
+    private double quantity;
 
 }

@@ -27,4 +27,10 @@ public interface Purchasable extends Serializable {
      */
     public Company getProvider();
 
+    /**
+     *
+     * @return Quantity of the Purchasable to be shipped/served
+     */
+    public double getQuantity();
+
 }

@@ -1,6 +1,5 @@
 package in.discvr.android.models.transactions;
 
-import in.discvr.android.models.Address;
 import in.discvr.android.models.PersistentObject;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,10 +17,6 @@ public class Cart extends PersistentObject {
 
     // Whom this cart belongs to
     private long userId;
-
-    // Billing and shipping addresses can be saved with User object too
-    private Address billingAddress;
-    private Address shippingAddress;
 
     private List<Purchasable> items;
 

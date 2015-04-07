@@ -1,6 +1,7 @@
 package in.discvr.android.models;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 
 /**
  * The objects, which need to get saved in SQLite, will extend this class
@@ -10,6 +11,13 @@ import java.io.Serializable;
 public abstract class PersistentObject implements Serializable, Comparable<PersistentObject> {
 
     private long id;
+    private LocalDateTime createdOn;
+    private LocalDateTime lastModifiedOn;
+
+    protected PersistentObject() {
+        this.createdOn = LocalDateTime.now();
+        this.lastModifiedOn = LocalDateTime.now();
+    }
 
     @Override
     public boolean equals(Object o) {
