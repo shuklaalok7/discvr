@@ -1,7 +1,9 @@
 package in.discvr.android.api;
 
 import in.discvr.android.dto.RequestDTO;
+import in.discvr.android.models.PersistentObject;
 import in.discvr.android.models.User;
+import in.discvr.android.models.transactions.Order;
 
 import java.util.List;
 
@@ -46,5 +48,24 @@ public class ApiClient {
         // Assuming the server returns, associated User object on successful login
         // Return null, if login fails
         return null;
+    }
+
+    /**
+     *
+     * @param order    Order object
+     * @return <code>true</code>, if placed successfully
+     */
+    public boolean placeOrder(Order order) {
+        // Implementation assumed
+        return false;
+    }
+
+    /**
+     * @param persistentObject    persistentObject to push to the server
+     * @return <code>id</code>
+     */
+    public long save(PersistentObject persistentObject) {
+        // Implementation assumed
+        return 0;
     }
 }
