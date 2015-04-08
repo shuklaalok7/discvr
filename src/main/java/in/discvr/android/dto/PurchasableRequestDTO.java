@@ -14,6 +14,6 @@ import lombok.Setter;
 @Setter
 public class PurchasableRequestDTO extends RequestDTO<Purchasable> {
     private Company provider;
-    private Location ServiceLocation;
+    private Location serviceLocation;
 
 }

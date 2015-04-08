@@ -25,7 +25,7 @@ public class LoginManager extends ManagerSupport {
      * @return Newly created User object
      */
     public User signUp(String email, String password) {
-        // Sign-up
+        // API call for sign-up
         return null;
     }
 

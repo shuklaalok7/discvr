@@ -22,6 +22,7 @@
     </properties>
 
     <dependencies>
+        <!-- Helper -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
@@ -34,6 +35,7 @@
             <version>${lombok.version}</version>
         </dependency>
 
+        <!-- For gson parsing -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
